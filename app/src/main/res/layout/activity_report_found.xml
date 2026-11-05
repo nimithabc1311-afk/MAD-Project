@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Found Item"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#168B65"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload photo for AI automatic lost item matching."
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Photo (for AI Matching)"
+            android:textStyle="bold"
+            android:textColor="#222222"/>
+
+        <ImageView
+            android:id="@+id/ivSelectedImage"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="6dp"
+            android:scaleType="centerCrop"
+            android:background="#E2E8F0"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="📷 Choose Photo"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#4A5568"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textStyle="bold"
+            android:textColor="#222222"/>
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter item name"
+            android:inputType="textCapSentences"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textStyle="bold"
+            android:textColor="#222222"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:hint="Describe the found item"
+            android:gravity="top"
+            android:inputType="textMultiLine|textCapSentences"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Found"
+            android:textStyle="bold"
+            android:textColor="#222222"/>
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Where did you find it?"
+            android:inputType="textCapSentences"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Found"
+            android:textStyle="bold"
+            android:textColor="#222222"/>
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btnSubmitFound"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Submit &amp; Run AI Match"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#168B65"/>
+
+    </LinearLayout>
+
+</ScrollView>

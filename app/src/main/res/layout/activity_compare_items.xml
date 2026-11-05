@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🤖 AI Image Match Comparison"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2457C5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvMatchScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Match Confidence: 85%"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#168B65"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Images Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📦 Lost Item Photo"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#222222"
+                    android:layout_marginBottom="6dp"/>
+
+                <ImageView
+                    android:id="@+id/ivLostPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:background="#CBD5E0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔍 Found Item Photo"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#222222"
+                    android:layout_marginBottom="6dp"/>
+
+                <ImageView
+                    android:id="@+id/ivFoundPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:background="#CBD5E0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Details Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/tvLostDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tvFoundDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCloseComparison"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Done"
+            android:textSize="16sp"
+            android:backgroundTint="#2457C5"/>
+
+    </LinearLayout>
+
+</ScrollView>
